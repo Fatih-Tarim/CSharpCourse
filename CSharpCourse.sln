@@ -35,9 +35,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessModifiers", "AccessMo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Constructors", "Constructors\Constructors.csproj", "{EDCFDBC5-BECE-44A1-A195-5B87B05C3413}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceAndValueType", "ReferenceAndValueType\ReferenceAndValueType.csproj", "{E854BAB4-8D4F-4DE9-8857-8727FA00EDC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReferenceAndValueType", "ReferenceAndValueType\ReferenceAndValueType.csproj", "{E854BAB4-8D4F-4DE9-8857-8727FA00EDC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{4D963010-6189-445F-9B5E-93837DA82D70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections", "Collections\Collections.csproj", "{4D963010-6189-445F-9B5E-93837DA82D70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exceptions", "Exceptions\Exceptions.csproj", "{FBA91981-D7FF-4ECD-9220-C3CBE34ECBC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetDemo", "AdoNetDemo\AdoNetDemo.csproj", "{4D3A2C71-3DC3-4386-9733-F566F6D8D5D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +121,14 @@ Global
 		{4D963010-6189-445F-9B5E-93837DA82D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D963010-6189-445F-9B5E-93837DA82D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D963010-6189-445F-9B5E-93837DA82D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA91981-D7FF-4ECD-9220-C3CBE34ECBC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA91981-D7FF-4ECD-9220-C3CBE34ECBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA91981-D7FF-4ECD-9220-C3CBE34ECBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA91981-D7FF-4ECD-9220-C3CBE34ECBC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D3A2C71-3DC3-4386-9733-F566F6D8D5D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D3A2C71-3DC3-4386-9733-F566F6D8D5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D3A2C71-3DC3-4386-9733-F566F6D8D5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D3A2C71-3DC3-4386-9733-F566F6D8D5D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,12 +8,28 @@ namespace Collections
     {
         static void Main(string[] args)
         {
-            //string[] cities = new string[2] {"Ankara","İstanbul"};
-            //cities = new string[3];
-            //Console.WriteLine(cities[0]);
 
             //ArrayList();
 
+            //List();
+
+            Dictionary<string, string> dictionary = new Dictionary<string, string>();
+            dictionary.Add("book","kitap");
+            dictionary.Add("table","tablo");
+            dictionary.Add("computer","bilgisayar");
+
+            Console.WriteLine(dictionary["table"]);
+            foreach (var dic in dictionary)
+            {
+                Console.WriteLine(dic);
+            }
+            Console.WriteLine(dictionary.ContainsKey("glass"));
+            Console.WriteLine(dictionary.ContainsKey("table"));
+
+        }
+
+        private static void List()
+        {
             List<string> cities = new List<string>();
             cities.Add("Ankara");
             cities.Add("İstanbul");
@@ -36,28 +52,39 @@ namespace Collections
                 new Customer { Id = 2, FirstName = "Burak" }
             };
 
-            
+
             var customer2 = new Customer
             {
-                Id=3,
-                FirstName="Çağatay"
+                Id = 3,
+                FirstName = "Çağatay"
             };
             customers.Add(customer2);
             customers.AddRange(new Customer[2] {
                 new Customer{Id=4,FirstName="Ali"},
                 new Customer{Id=5,FirstName="Ayşe"}
             });
+            //contains --> Arama
             Console.WriteLine(customers.Contains(new Customer { Id = 1, FirstName = "Fatih" })); //false
             Console.WriteLine(customers.Contains(customer2)); //true
             //customers.Clear();
 
+            var index = customers.IndexOf(customer2);
+            Console.WriteLine("Index: {0}", index);
+
+            var index2 = customers.LastIndexOf(customer2);
+            Console.WriteLine("Last Index: {0}", index2);
+
+            customers.Insert(0, customer2);
+
+            customers.Remove(customer2);
+            customers.RemoveAll(c => c.FirstName == "Fatih");
 
             foreach (var customer in customers)
             {
                 Console.WriteLine(customer.FirstName);
             }
             var count = customers.Count;
-            Console.WriteLine("Count {0}", count);
+            Console.WriteLine("Count: {0}", count);
         }
 
         private static void ArrayList()
